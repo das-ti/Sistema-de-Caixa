@@ -1,5 +1,3 @@
-Claro, aqui está uma sugestão de estrutura em Markdown para o seu projeto de página web de sistema de caixa de loja:
-
 # Página Web: Sistema de Caixa de Loja
 
 ## Descrição
