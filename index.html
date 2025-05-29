@@ -4,369 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
     <title>Lista de Compras</title>
 </head>
 
 <body>
-
-    <header>
-        <div id="titulo-pagina">
-            <img src="" alt="logo_marca">
-            <h1>Suas Compras On-line</h1>
-        </div>
-        <nav id="menu">
-            <ul>
-                <li>Produtos</li>
-                <li>Categorias</li>
-                <li>Cadastre-se</li>
-                <li>Entrar</li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <div id="titulos">
+        <!-- <div id="titulos">
             <div>
                 <h2>Produtos Disponíveis</h2>
             </div>
             <div>
                 <h2>Itens da Lista</h2>
             </div>
-        </div>
+        </div> -->
         <section id="container">
             <section id="grid-produtos">
                 <div class="produto">
-                    <img src="https://images.centauro.com.br/media/10109192/tenis-adidas-rapidar-2-m-01.jpg"
-                        alt="Tênis de corrida masculino Adidas">
-                    <p>Tênis Adidas Runfalcon</p>
-                    <strong>R$ 299,99</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/adidas-falcon5-m.png" alt="Tênis de corrida masculino Adidas">
+                    <p class="nome_produto">Adidas Runfalcon 5</p>
+                    <strong class="valor_produto">R$ 264,90</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
 
                 <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679808706/zoom/1"
-                        alt="Camiseta esportiva de corrida">
-                    <p>Camiseta Dry Fit Nike</p>
-                    <strong>R$ 89,99</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/puma-deviate-n3-m.png" alt="Tênis Puma Deviate Nitro 3 Masculino">
+                    <p class="nome_produto">Puma Deviate Nitro 3</p>
+                    <strong class="valor_produto">R$ 949,91</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
 
                 <div class="produto">
-                    <img src="https://www.centauro.com.br/media/10108525/bc1601-32-00-01.jpg"
-                        alt="Short de corrida masculino">
-                    <p>Short de Corrida Nike</p>
-                    <strong>R$ 59,90</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/asics-patriot13-m.png" alt="Asics Patriot 13">
+                    <p class="nome_produto">Asics Patriot 13</p>
+                    <strong class="valor_produto">R$ 229,99</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
 
                 <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/678819819/zoom/1"
-                        alt="Legging de corrida feminina">
-                    <p>Legging de Compressão Nike</p>
-                    <strong>R$ 129,90</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/new-nalance-413V3-f.png" alt="New Balance 413 V3">
+                    <p class="nome_produto">New Balance 413 V3</p>
+                    <strong class="valor_produto">R$ 246,99</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
 
                 <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h07/h31/9973003713054/BR1717_1.jpg"
-                        alt="Chuteira de corrida">
-                    <p>Chuteira Nike Zoom Fly</p>
-                    <strong>R$ 219,99</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/adidas-lite-racer-4-f.png" alt="Adidas Lite Racer 4 0">
+                    <p class="nome_produto">Adidas Lite Racer 4</p>
+                    <strong class="valor_produto">R$ 161,99</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
 
                 <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/672818138/zoom/1"
-                        alt="Meias esportivas de corrida">
-                    <p>Meias Térmicas Brooks</p>
-                    <strong>R$ 29,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h05/h0a/9989825821886/BR0732_2.jpg"
-                        alt="Jaqueta de corrida leve">
-                    <p>Jaqueta de Corrida Adidas</p>
-                    <strong>R$ 180,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/674096545/zoom/1"
-                        alt="Boné esportivo de corrida">
-                    <p>Boné Hidrofugante Nike</p>
-                    <strong>R$ 50,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679505178/zoom/1"
-                        alt="Capa de água para corrida">
-                    <p>Capa de Chuva Leve</p>
-                    <strong>R$ 45,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-                <div class="produto">
-                    <img src="https://images.centauro.com.br/media/10109192/tenis-adidas-rapidar-2-m-01.jpg"
-                        alt="Tênis de corrida masculino Adidas">
-                    <p>Tênis Adidas Runfalcon</p>
-                    <strong>R$ 299,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679808706/zoom/1"
-                        alt="Camiseta esportiva de corrida">
-                    <p>Camiseta Dry Fit Nike</p>
-                    <strong>R$ 89,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://www.centauro.com.br/media/10108525/bc1601-32-00-01.jpg"
-                        alt="Short de corrida masculino">
-                    <p>Short de Corrida Nike</p>
-                    <strong>R$ 59,90</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/678819819/zoom/1"
-                        alt="Legging de corrida feminina">
-                    <p>Legging de Compressão Nike</p>
-                    <strong>R$ 129,90</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h07/h31/9973003713054/BR1717_1.jpg"
-                        alt="Chuteira de corrida">
-                    <p>Chuteira Nike Zoom Fly</p>
-                    <strong>R$ 219,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/672818138/zoom/1"
-                        alt="Meias esportivas de corrida">
-                    <p>Meias Térmicas Brooks</p>
-                    <strong>R$ 29,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h05/h0a/9989825821886/BR0732_2.jpg"
-                        alt="Jaqueta de corrida leve">
-                    <p>Jaqueta de Corrida Adidas</p>
-                    <strong>R$ 180,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/674096545/zoom/1"
-                        alt="Boné esportivo de corrida">
-                    <p>Boné Hidrofugante Nike</p>
-                    <strong>R$ 50,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679505178/zoom/1"
-                        alt="Capa de água para corrida">
-                    <p>Capa de Chuva Leve</p>
-                    <strong>R$ 45,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-                <div class="produto">
-                    <img src="https://images.centauro.com.br/media/10109192/tenis-adidas-rapidar-2-m-01.jpg"
-                        alt="Tênis de corrida masculino Adidas">
-                    <p>Tênis Adidas Runfalcon</p>
-                    <strong>R$ 299,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679808706/zoom/1"
-                        alt="Camiseta esportiva de corrida">
-                    <p>Camiseta Dry Fit Nike</p>
-                    <strong>R$ 89,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://www.centauro.com.br/media/10108525/bc1601-32-00-01.jpg"
-                        alt="Short de corrida masculino">
-                    <p>Short de Corrida Nike</p>
-                    <strong>R$ 59,90</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/678819819/zoom/1"
-                        alt="Legging de corrida feminina">
-                    <p>Legging de Compressão Nike</p>
-                    <strong>R$ 129,90</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h07/h31/9973003713054/BR1717_1.jpg"
-                        alt="Chuteira de corrida">
-                    <p>Chuteira Nike Zoom Fly</p>
-                    <strong>R$ 219,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/672818138/zoom/1"
-                        alt="Meias esportivas de corrida">
-                    <p>Meias Térmicas Brooks</p>
-                    <strong>R$ 29,99</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.havaianas.com.br/medias/sys_master/h05/h0a/9989825821886/BR0732_2.jpg"
-                        alt="Jaqueta de corrida leve">
-                    <p>Jaqueta de Corrida Adidas</p>
-                    <strong>R$ 180,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/674096545/zoom/1"
-                        alt="Boné esportivo de corrida">
-                    <p>Boné Hidrofugante Nike</p>
-                    <strong>R$ 50,00</strong>
-                    <button>Adicionar Produto</button>
-                </div>
-
-                <div class="produto">
-                    <img src="https://images.lojasrenner.com.br/item/image/679505178/zoom/1"
-                        alt="Capa de água para corrida">
-                    <p>Capa de Chuva Leve</p>
-                    <strong>R$ 45,00</strong>
-                    <button>Adicionar Produto</button>
+                    <img class="img_produto" src="img/asics-gel-thunderlight-f.png" alt="Asics Gel-Thunderlight">
+                    <p class="nome_produto">Asics Gel-Thunderlight</p>
+                    <strong class="valor_produto">R$ 179,99</strong>
+                    <button onclick="addItem(this)">Selecionar</button>
                 </div>
             </section>
             <section id="lista-produtos">
-                <section id="itens-lista">
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                    <div class="itens">
-                        <img src="" alt="foto produto">
-                        <p>Nome do produto</p>
-                        <p><b>R$ 100,00</b></p>
-                    </div>
-                </section>
                 <section id="total">
-                    <div id="valor-total">
-                        <p>Valor Total da compra: <strong>R$ 500,00</strong></p>
-                    </div>
+                    <h3>Total da Lista: </h3>
+                    <p id="valor-total">R$ 0,00</p>
                 </section>
             </section>
         </section>
 
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
